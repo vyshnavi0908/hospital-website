@@ -1,0 +1,11 @@
+export { default as logoImg } from "@assets/image_1779469060828.png";
+export { default as signageImg } from "@assets/image_1779469382027.png";
+export { default as buildingImg } from "@assets/image_1779469432650.png";
+export { default as bedsImg } from "@assets/image_1779469469907.png";
+export { default as otImg } from "@assets/image_1779469496789.png";
+export { default as receptionImg } from "@assets/image_1779469820822.png";
+export { default as waitingImg } from "@assets/image_1779469848440.png";
+export { default as gynoImg } from "@assets/image_1779469900243.png";
+export { default as icuImg } from "@assets/image_1779469980527.png";
+export { default as doctor1Img } from "@assets/image_1779470300580.png";
+export { default as doctor2Img } from "@assets/image_1779470312264.png";

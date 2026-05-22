@@ -1,0 +1,335 @@
+Build a modern, premium, world-class responsive website for a hospital named SVASTHA Emergency & Multi-speciality Hospital located in Mandapeta, Andhra Pradesh, India.
+
+The website should look luxurious, trustworthy, modern, medically professional, emotionally comforting, and highly premium like Apollo Hospitals + Medanta + Fortis style combined with modern UI/UX aesthetics.
+
+The design must feel:
+
+Premium
+Clean
+Elegant
+Trustworthy
+Fast
+Professional
+Human-centered
+High-end healthcare brand
+
+Use a modern glassmorphism + soft gradients + clean cards + smooth animations style.
+
+BRAND DETAILS
+
+Hospital Name:
+SVASTHA Emergency & Multi-speciality Hospital
+
+Tagline:
+“24/7 Emergency Care With Compassion & Excellence”
+
+Location:
+SH 218, Sangita Venkat Reddy Nagar, Mandapeta, Andhra Pradesh 533308
+
+Contact Numbers:
+09044337799
+09044339977
+09459459977
+
+Availability:
+Open 24 Hours
+
+Region:
+East Godavari, Andhra Pradesh
+
+Social Media:
+Instagram
+YouTube
+
+COLOR PALETTE
+
+Use premium healthcare color palette:
+
+Deep Medical Blue (#0B5ED7)
+Royal Navy (#0A2647)
+Soft Cyan (#E8F6FF)
+White (#FFFFFF)
+Emerald Green accents (#10B981)
+Soft gradient backgrounds
+Light glowing effects
+
+The entire website should feel premium and expensive.
+
+WEBSITE STRUCTURE
+
+Create the following sections with modern layouts and animations.
+
+1. HERO SECTION
+
+Full-screen premium hero section with:
+
+Modern hospital building background
+Emergency healthcare visuals
+Soft gradient overlay
+Animated floating medical icons
+Smooth entrance animations
+
+Headline:
+“Advanced Emergency & Multi-speciality Healthcare in Mandapeta”
+
+Subheadline:
+“24/7 expert medical care, advanced treatments, compassionate doctors, and modern healthcare facilities for your family.”
+
+Buttons:
+
+Book Appointment
+Emergency Contact
+
+Show:
+
+Open 24 Hours badge
+Trusted by thousands
+Emergency support
+Ambulance availability
+
+Include floating stats cards:
+
+24/7 Emergency
+Expert Doctors
+Advanced Care
+Multi-speciality Services
+2. ABOUT HOSPITAL SECTION
+
+Create premium card-based layout.
+
+Content:
+SVASTHA Emergency & Multi-speciality Hospital is a trusted healthcare institution in Mandapeta dedicated to delivering advanced medical care with compassion, technology, and experienced healthcare professionals. The hospital provides emergency services, multi-speciality treatments, patient-focused care, and round-the-clock medical support.
+
+Add:
+
+Mission
+Vision
+Patient-first approach
+Modern infrastructure
+Experienced medical team
+
+Use elegant icon cards.
+
+3. SPECIALITIES SECTION
+
+Create premium animated speciality cards.
+
+Include:
+
+Emergency Medicine
+General Medicine
+Cardiology
+Orthopedics
+Gynecology
+Pediatrics
+Critical Care
+General Surgery
+Diagnostics
+Trauma Care
+
+Each card should have:
+
+Medical icon
+Hover animation
+Short description
+Premium glowing effects
+4. EMERGENCY CARE SECTION
+
+Create a visually strong emergency section with:
+
+Red emergency highlights
+Emergency ambulance visuals
+24/7 emergency banner
+Quick call buttons
+
+Content:
+“Immediate emergency medical care with rapid response team and advanced life-saving facilities.”
+
+Add:
+
+Emergency hotline
+ICU support
+Trauma care
+Emergency response unit
+5. WHY CHOOSE US SECTION
+
+Create modern premium feature cards.
+
+Include:
+
+24/7 Availability
+Experienced Doctors
+Advanced Technology
+Compassionate Care
+Modern Infrastructure
+Patient Safety
+Affordable Treatment
+Emergency Services
+
+Use animated cards with subtle hover glow effects.
+
+6. DOCTORS SECTION
+
+Create premium doctor profile cards.
+
+Include placeholder professional doctors with:
+
+Doctor image
+Name
+Qualification
+Specialty
+Experience
+
+Use modern elegant medical profile UI.
+
+7. PATIENT TESTIMONIALS
+
+Use real reviews from provided data.
+
+Include:
+1.
+“It nice facilities and 24/7 service and nice treatment”
+— Janakiram Rama
+
+“My wife has received the best support from doctors and nursing staff.”
+— mAnIKaNtA sATyLa
+
+“I’m so grateful to have her as my doctor!”
+— Jyothi Garagapati
+
+Create:
+
+Premium review slider
+Glassmorphism cards
+Star ratings
+Smooth autoplay animations
+8. FACILITIES SECTION
+
+Create beautiful icon-based facilities grid.
+
+Include:
+
+24/7 Emergency
+ICU
+Modern Operation Theaters
+Ambulance Service
+Diagnostics Lab
+Patient Rooms
+Pharmacy
+Critical Care Unit
+9. APPOINTMENT BOOKING SECTION
+
+Create a premium booking form with:
+
+Name
+Phone Number
+Department
+Appointment Date
+Message
+
+Add:
+
+Modern UI inputs
+Floating labels
+Validation
+Success animations
+10. CONTACT SECTION
+
+Include:
+Address:
+SH 218, Sangita Venkat Reddy Nagar, Mandapeta, Andhra Pradesh 533308
+
+Phone Numbers:
+09044337799
+09044339977
+09459459977
+
+Open:
+24 Hours
+
+Add:
+
+Google Maps embed
+Quick call buttons
+WhatsApp button
+Social media links
+Elegant contact cards
+11. FOOTER
+
+Create luxury hospital footer with:
+
+Logo
+Quick links
+Services
+Contact info
+Social icons
+Emergency contact banner
+
+Use dark premium gradient footer.
+
+DESIGN REQUIREMENTS
+
+The website must include:
+
+Smooth scroll animations
+Framer Motion animations
+Glassmorphism cards
+Premium gradients
+Modern typography
+Responsive design
+Mobile-first optimization
+SEO optimization
+Fast loading
+Sticky navbar
+Floating WhatsApp button
+Animated counters
+Hover interactions
+Soft shadows
+Premium spacing
+Medical themed illustrations
+TECH STACK
+
+Use:
+
+React
+Next.js
+Tailwind CSS
+Framer Motion
+Lucide React Icons
+
+Make the entire website production-ready and visually stunning.
+
+EXTRA PREMIUM FEATURES
+
+Add:
+
+Loading animation
+Scroll progress indicator
+Animated emergency button
+Floating appointment CTA
+Modern statistics counters
+Interactive service cards
+Animated gradients
+Smooth page transitions
+SEO DETAILS
+
+SEO Title:
+SVASTHA Emergency & Multi-speciality Hospital | Mandapeta
+
+SEO Description:
+24/7 emergency and multi-speciality healthcare hospital in Mandapeta offering advanced treatments, expert doctors, compassionate care, and modern medical facilities.
+
+FINAL OUTPUT REQUIREMENT
+
+Generate:
+
+Complete responsive website
+All sections fully designed
+Premium UI/UX
+Realistic medical visuals
+Professional animations
+Production-ready code
+Modern healthcare branding
+Fully responsive for mobile, tablet, and desktop
+
+The final website should look like a ₹10 lakh professional hospital website built by a top healthcare web design agency.
