@@ -1,68 +1,65 @@
-import { otImg, bedsImg, waitingImg } from "@/assets";
+import { otImg, wardImg, receptionImg } from "@/assets";
 import { motion } from "framer-motion";
-import { Activity, Stethoscope, Microscope, Truck, Pill, BedDouble, Stethoscope as StethoscopeIcon, HeartPulse } from "lucide-react";
+import { Activity, Stethoscope, Microscope, Truck, Pill, BedDouble, HeartPulse, ShieldPlus } from "lucide-react";
 
 export function Facilities() {
   const facList = [
-    { icon: <Activity />, name: "24/7 Emergency" },
-    { icon: <HeartPulse />, name: "Advanced ICU" },
-    { icon: <Stethoscope />, name: "Modern OTs" },
-    { icon: <Truck />, name: "Ambulance Service" },
-    { icon: <Microscope />, name: "Diagnostics Lab" },
-    { icon: <BedDouble />, name: "Patient Rooms" },
-    { icon: <Pill />, name: "24/7 Pharmacy" },
-    { icon: <StethoscopeIcon />, name: "Critical Care Unit" }
+    { icon: <Activity className="w-6 h-6" />, name: "24/7 Emergency" },
+    { icon: <HeartPulse className="w-6 h-6" />, name: "ICU" },
+    { icon: <Stethoscope className="w-6 h-6" />, name: "Modern OTs" },
+    { icon: <Truck className="w-6 h-6" />, name: "Ambulance" },
+    { icon: <Microscope className="w-6 h-6" />, name: "Diagnostics Lab" },
+    { icon: <BedDouble className="w-6 h-6" />, name: "Patient Rooms" },
+    { icon: <Pill className="w-6 h-6" />, name: "Pharmacy" },
+    { icon: <ShieldPlus className="w-6 h-6" />, name: "Critical Care" }
+  ];
+
+  const gallery = [
+    { img: otImg, title: "Operation Theater" },
+    { img: wardImg, title: "Patient Ward" },
+    { img: receptionImg, title: "Reception" }
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-[#0A2647] relative">
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-white/10 text-white font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider mb-4 border border-white/20">
-            Infrastructure
-          </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">World-Class Medical Facilities</h2>
-          <p className="text-lg text-blue-100/80">
-            Equipped with modern technology and patient-centric infrastructure to ensure the best possible care.
-          </p>
+    <section className="py-16 md:py-24 bg-[#EAF6FF]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <span className="text-[#007BFF] text-sm font-bold uppercase tracking-wider block mb-2">Infrastructure</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B]">
+            World-Class Facilities
+          </h2>
         </div>
 
         {/* Gallery */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {[
-            { img: otImg, title: "Modern Operation Theater" },
-            { img: bedsImg, title: "Comfortable Patient Ward" },
-            { img: waitingImg, title: "Premium Waiting Area" }
-          ].map((item, i) => (
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {gallery.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative rounded-2xl overflow-hidden aspect-[4/3] group"
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="relative rounded-xl overflow-hidden aspect-video shadow-md border border-[#D9EAF7]"
             >
               <img 
                 src={item.img} 
                 alt={item.title} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="text-white font-bold text-xl">{item.title}</h3>
-              </div>
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <h3 className="absolute bottom-4 left-4 right-4 text-white font-medium">{item.title}</h3>
             </motion.div>
           ))}
         </div>
 
         {/* Facilities Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {facList.map((fac, i) => (
-            <div key={i} className="bg-white/5 border border-white/10 backdrop-blur-sm p-6 rounded-xl flex flex-col items-center justify-center text-center hover:bg-white/10 transition-colors">
-              <div className="text-blue-300 mb-3">
+            <div key={i} className="bg-white border border-[#D9EAF7] p-6 rounded-xl shadow-sm hover:shadow-md hover:border-[#007BFF] transition-all flex flex-col items-center text-center">
+              <div className="text-[#007BFF] mb-3">
                 {fac.icon}
               </div>
-              <h4 className="text-white font-bold">{fac.name}</h4>
+              <h4 className="font-medium text-[#1E293B]">{fac.name}</h4>
             </div>
           ))}
         </div>

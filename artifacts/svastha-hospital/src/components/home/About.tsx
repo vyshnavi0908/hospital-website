@@ -1,8 +1,15 @@
-import { signageImg } from "@/assets";
-import { HeartPulse, Eye, Users, Building2 } from "lucide-react";
+import { signImg } from "@/assets";
+import { Target, Eye, Heart, Building2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function About() {
+  const features = [
+    { icon: <Target className="w-5 h-5" />, title: "Mission", desc: "Providing accessible, high-quality healthcare." },
+    { icon: <Eye className="w-5 h-5" />, title: "Vision", desc: "To be the most trusted healthcare partner." },
+    { icon: <Heart className="w-5 h-5" />, title: "Patient-First", desc: "Your well-being is at the center of all we do." },
+    { icon: <Building2 className="w-5 h-5" />, title: "Modern Infrastructure", desc: "State-of-the-art facilities and technology." },
+  ];
+
   const stats = [
     { num: "500+", label: "Patients Served" },
     { num: "10+", label: "Expert Doctors" },
@@ -10,86 +17,69 @@ export function About() {
     { num: "5+", label: "Specialities" },
   ];
 
-  const features = [
-    { icon: <HeartPulse className="w-6 h-6 text-primary" />, title: "Our Mission", desc: "To provide accessible, high-quality healthcare with compassion." },
-    { icon: <Eye className="w-6 h-6 text-primary" />, title: "Our Vision", desc: "To be the most trusted healthcare partner in Mandapeta." },
-    { icon: <Users className="w-6 h-6 text-primary" />, title: "Patient-First", desc: "Every decision we make puts patient well-being at the center." },
-    { icon: <Building2 className="w-6 h-6 text-primary" />, title: "Modern Infrastructure", desc: "State-of-the-art facilities and advanced medical technology." },
-  ];
-
   return (
-    <section id="about" className="py-24 md:py-32 bg-white relative">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <span className="text-[#007BFF] text-sm font-bold uppercase tracking-wider block mb-2">About Us</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B]">
+            About SVASTHA Emergency & Multi-speciality Hospital
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5 }}
           >
-            <div className="absolute inset-0 bg-primary/10 translate-x-4 translate-y-4 rounded-2xl"></div>
-            <img 
-              src={signageImg} 
-              alt="SVASTHA Hospital Signage" 
-              className="w-full h-auto object-cover rounded-2xl relative z-10 shadow-xl"
-            />
-            
-            <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-2xl z-20 border border-border">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
-                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-2xl font-extrabold text-foreground">Govt.</div>
-                  <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Approved</div>
-                </div>
-              </div>
+            <div className="rounded-2xl border border-[#D9EAF7] shadow-md overflow-hidden bg-white p-2">
+              <img 
+                src={signImg} 
+                alt="Hospital Signage" 
+                className="w-full aspect-[4/3] object-cover rounded-xl"
+              />
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="inline-block bg-blue-50 text-primary font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider mb-4">
-              About Us
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-6 leading-tight">
-              A Legacy of <span className="text-primary">Trust & Healing</span> in Mandapeta
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-[#64748B] mb-8 leading-relaxed">
               SVASTHA Emergency & Multi-speciality Hospital is a trusted healthcare institution dedicated to delivering advanced medical care with compassion, technology, and experienced healthcare professionals. We stand as a beacon of hope and healing for our community.
             </p>
             
-            <div className="grid sm:grid-cols-2 gap-6 mb-10">
+            <div className="grid sm:grid-cols-2 gap-6">
               {features.map((item, i) => (
-                <div key={i} className="flex gap-4 p-4 rounded-xl hover:bg-blue-50/50 transition-colors border border-transparent hover:border-blue-100">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                <div key={i} className="bg-white border border-[#D9EAF7] rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-10 h-10 bg-[#EAF6FF] text-[#007BFF] rounded-lg flex items-center justify-center mb-4">
                     {item.icon}
                   </div>
-                  <div>
-                    <h3 className="font-bold text-foreground text-lg mb-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-border">
-              {stats.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1">{stat.num}</div>
-                  <div className="text-xs md:text-sm font-bold text-muted-foreground uppercase tracking-wide">{stat.label}</div>
+                  <h3 className="font-bold text-[#1E293B] mb-2">{item.title}</h3>
+                  <p className="text-sm text-[#64748B] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </motion.div>
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6"
+        >
+          {stats.map((stat, i) => (
+            <div key={i} className="bg-[#EAF6FF] p-8 rounded-xl text-center shadow-sm">
+              <div className="text-3xl md:text-4xl font-bold text-[#007BFF] mb-2">{stat.num}</div>
+              <div className="text-sm font-medium text-[#1E293B]">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

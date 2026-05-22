@@ -34,7 +34,6 @@ export function Testimonials() {
     onSelect();
     emblaApi.on('select', onSelect);
     
-    // Auto scroll
     const interval = setInterval(() => {
       emblaApi.scrollNext();
     }, 5000);
@@ -42,41 +41,36 @@ export function Testimonials() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="py-24 bg-[#E8F6FF] relative overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-6">What Our Patients Say</h2>
-          <p className="text-lg text-muted-foreground">
-            Real stories of healing and care from the people who matter most.
-          </p>
+    <section className="py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <span className="text-[#007BFF] text-sm font-bold uppercase tracking-wider block mb-2">Testimonials</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B]">
+            Patient Experiences
+          </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto relative">
+        <div className="max-w-4xl mx-auto">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {reviews.map((review, i) => (
-                <div key={i} className="flex-[0_0_100%] min-w-0 pl-4 md:pl-6 pr-4 md:pr-6">
-                  <div className="bg-white/80 backdrop-blur-xl border border-white p-8 md:p-12 rounded-3xl shadow-xl relative">
-                    <Quote className="absolute top-8 right-8 w-16 h-16 text-primary/10 rotate-180" />
+                <div key={i} className="flex-[0_0_100%] min-w-0 px-4">
+                  <div className="bg-white border border-[#D9EAF7] p-8 md:p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow relative text-center">
+                    <Quote className="absolute top-6 left-1/2 -translate-x-1/2 w-10 h-10 text-[#EAF6FF]" />
                     
-                    <div className="flex gap-1 mb-6">
+                    <div className="flex justify-center gap-1 mb-6 mt-4">
                       {[...Array(review.rating)].map((_, idx) => (
-                        <Star key={idx} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                        <Star key={idx} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
                     
-                    <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed mb-8 relative z-10">
+                    <p className="text-lg md:text-xl italic text-gray-600 mb-8">
                       "{review.text}"
                     </p>
                     
-                    <div className="flex items-center gap-4 border-t border-border/50 pt-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
-                        {review.name.charAt(0)}
-                      </div>
-                      <div>
-                        <div className="font-bold text-foreground text-lg">{review.name}</div>
-                        <div className="text-sm text-muted-foreground font-medium">Patient</div>
-                      </div>
+                    <div>
+                      <div className="font-bold text-[#1E293B]">{review.name}</div>
+                      <div className="text-sm text-gray-500">Patient</div>
                     </div>
                   </div>
                 </div>
@@ -84,13 +78,13 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-3 mt-8">
+          <div className="flex justify-center gap-2 mt-8">
             {reviews.map((_, i) => (
               <button
                 key={i}
                 onClick={() => emblaApi?.scrollTo(i)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  i === selectedIndex ? "bg-primary w-8" : "bg-primary/20 hover:bg-primary/50"
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  i === selectedIndex ? "bg-[#007BFF] w-6" : "bg-gray-300"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

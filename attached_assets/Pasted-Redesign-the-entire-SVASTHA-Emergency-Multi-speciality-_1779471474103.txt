@@ -1,0 +1,174 @@
+Redesign the entire SVASTHA Emergency & Multi-speciality Hospital website using the exact visual style inspiration of Apollo Hospitals.
+
+IMPORTANT:
+The website must feel clean, spacious, premium, modern, and medically professional.
+
+Use a light healthcare theme with:
+
+White backgrounds
+Soft light blue sections
+Minimal gradients
+Clean spacing
+Elegant shadows
+Professional medical aesthetics
+COLOR PALETTE
+
+Use these exact premium colors throughout the website:
+
+Primary Blue:
+#007BFF
+
+Light Blue:
+#EAF6FF
+
+Soft Cyan:
+#DFF4FF
+
+Dark Text:
+#1E293B
+
+White:
+#FFFFFF
+
+Border Color:
+#D9EAF7
+
+Hover Blue:
+#0056D2
+
+Emergency Accent:
+#00AEEF
+
+DO NOT use:
+
+Dark backgrounds
+Heavy gradients
+Neon glow
+Over-saturated colors
+Glassmorphism overload
+Too many floating elements
+
+Keep everything elegant and minimal like Apollo Hospitals.
+
+VERY IMPORTANT LAYOUT RULES
+
+Fix ALL overlapping issues in the entire website.
+
+STRICTLY ENSURE:
+
+No text overlaps
+No card overlaps
+No image overlaps
+No button collisions
+No section spacing issues
+No mobile responsiveness issues
+No horizontal scrolling
+No clipped content
+Proper padding and margins everywhere
+Perfect alignment in all sections
+
+Use:
+
+Consistent spacing system
+Flexbox/Grid properly
+Responsive breakpoints
+Proper container widths
+Proper z-index management
+
+The website must look perfectly structured on:
+
+Mobile
+Tablet
+Desktop
+Large screens
+DESIGN STYLE
+
+Match Apollo Hospitals style:
+
+Clean medical UI
+Professional whitespace
+Soft rounded corners
+Elegant cards
+Minimal premium animations
+Subtle hover effects
+Smooth scrolling
+Structured layouts
+Soft blue section backgrounds
+Modern typography
+
+Use:
+
+Inter font
+OR
+Poppins font
+HERO SECTION
+
+Create:
+
+White/light blue hero background
+Premium hospital image on right side
+Left side text content
+Proper spacing
+No overlapping
+Clean CTA buttons
+
+Buttons:
+
+Book Appointment
+Emergency Contact
+
+Add subtle floating medical icons only if they do not clutter the layout.
+
+SECTION DESIGN
+
+Every section should have:
+
+Equal spacing
+Proper margins
+Proper padding
+Structured alignment
+Clean visual hierarchy
+
+Cards should:
+
+Have white background
+Light border
+Soft shadow
+Hover elevation effect
+Rounded corners
+NAVBAR
+
+Create Apollo-style navbar:
+
+White background
+Sticky on scroll
+Blue hover effects
+Clean menu spacing
+Mobile responsive hamburger menu
+No overlapping in mobile view
+RESPONSIVENESS
+
+Completely optimize responsiveness.
+
+Ensure:
+
+Perfect mobile layout
+Responsive typography
+Responsive images
+Responsive grids
+Responsive buttons
+Proper stack layout on mobile
+FINAL OUTPUT REQUIREMENT
+
+The final website should look:
+
+Extremely clean
+Professional
+Modern
+Trustworthy
+Spacious
+Elegant
+Comparable to Apollo Hospitals
+
+Most importantly:
+NO OVERLAPPING ANYWHERE IN THE WEBSITE.
