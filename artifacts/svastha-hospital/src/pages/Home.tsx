@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingElements } from "@/components/layout/FloatingElements";
 import { Hero } from "@/components/home/Hero";
+import { QuickSpecialities } from "@/components/home/QuickSpecialities";
 import { About } from "@/components/home/About";
 import { Specialities } from "@/components/home/Specialities";
 import { Emergency } from "@/components/home/Emergency";
@@ -14,11 +15,12 @@ import { Contact } from "@/components/home/Contact";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-sans">
       <Navbar />
       
       <main>
         <Hero />
+        <QuickSpecialities />
         <About />
         <Specialities />
         <Emergency />
